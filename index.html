@@ -1,41 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Check Weather</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/223/223083.png?w=740&t=st=1690287538~exp=1690288138~hmac=2dd0ca246228cf1bea873160de5479e468d601e3b24676140b388ec89732660e">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card">
-    <div class="search">
-      <input type="text" id="cityInput" placeholder="Enter city name" spellcheck="false">
-      <button onclick="getWeatherData()"><img src="/search.png"></button>
-    </div>
-    <div class="weather">
-      <img src="/rain.png" class="weather-icon">
-      <h1 class="temp">29°C</h1>
-      <h2 class="city">Kushinagar</h2>
-      <div class="details">
-        <div class="col">
-          <img src="/humidity.png">
-          <div>
-            <p class="humidity">50%</p>
-            <p>humidity</p>
-          </div>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
+            <button><img src="https://www.pngmart.com/files/8/Search-Button-PNG-Image-Free-Download.png"></button>
         </div>
-        <div class="col">
-          <img src="/wind.png">
-          <div>
-            <p class="wind">15km/hr</p>
-            <p>Wind Speed</p>
-          </div>
+        <div class="error">
+            <p>Invalid City Name</p>
         </div>
-      </div>
+        <div class="weather">
+            <img src="https://cdn-icons-png.flaticon.com/512/423/423048.png?w=740&t=st=1690287421~exp=1690288021~hmac=2397c4f42acedcf77eb78844cf4e8402fb5da91f21701830078d19f018a9634e" class="weather-icon">
+            <h1 class="temp">32°C</h1>
+            <h2 class="city">Durgapur</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="https://tse2.mm.bing.net/th?id=OIP.w5Jqudz6w71j12gJrwIn9AHaHa&pid=ImgDet&w=800&h=800&rs=1">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://png.pngtree.com/png-vector/20220627/ourlarge/pngtree-wind-icon-green-vector-isolated-png-image_5499934.png">
+                    <div>
+                        <p class="wind">15 KM</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-<script src="script.js"></script>
-"
-
+    <script src="script.js"></script>
 </body>
 </html>
